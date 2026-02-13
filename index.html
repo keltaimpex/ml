@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Happy Valentine’s 💖</title>
+  <meta name="description" content="A tiny Valentine’s page made with love." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="bg-hearts" aria-hidden="true"></div>
+
+  <main class="card" role="main">
+    <p class="badge">💌 For my favorite person</p>
+
+    <h1>Happy Valentine’s, <span id="name">Shalline B.K.</span> 💖</h1>
+    <p class="subtitle">
+      I made this little page just to tell you something simple:
+      <strong>I choose you</strong> — today, tomorrow, always.
+    </p>
+
+    <section class="note">
+      <h2>My note to you</h2>
+
+      <!-- Closed letter -->
+      <div id="letterClosed" class="letter-closed">
+        <p class="closed-text">A sealed letter just for you, Shalline 💌</p>
+        <button id="openLetterBtn" class="btn primary">Open my letter</button>
+      </div>
+
+      <!-- Open letter (typing effect) -->
+      <div id="letterOpen" class="letter-open hidden">
+        <p id="typeTarget" class="type-text"></p>
+        <p class="signature">— <span id="fromName">Kelvin</span></p>
+      </div>
+    </section>
+
+    <section class="question">
+      <h2>Will you be my Valentine?</h2>
+      <div class="buttons">
+        <button id="yesBtn" class="btn primary">Yes 💘</button>
+        <button id="noBtn" class="btn ghost" aria-label="No">No 🙈</button>
+      </div>
+      <p class="hint">Tip: try hovering or clicking “No” 😅</p>
+    </section>
+
+    <section id="success" class="success hidden" aria-live="polite">
+      <div class="success-box">
+        <h3>Yaaay!! 🥰</h3>
+        <p>
+          You just made my whole day.
+          <br />
+          <strong>See you for our Valentine’s date 💞</strong>
+        </p>
+        <div class="tiny-actions">
+          <button id="confettiBtn" class="btn small">More confetti ✨</button>
+          <button id="copyBtn" class="btn small ghost">Copy sweet message 📋</button>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <span>Made with ❤️</span>
+      <span class="dot">•</span>
+      <a href="#" id="editLink">Customize names</a>
+    </footer>
+  </main>
+
+  <canvas id="confettiCanvas" class="confetti" aria-hidden="true"></canvas>
+
+  <script src="script.js"></script>
+</body>
+</html>
